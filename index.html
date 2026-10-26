@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071426">
+  <meta name="description" content="MY APPS HUB V.1 — All Your Apps. One Place.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>MY APPS HUB V.1</title>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="MY APPS HUB Utama">
+      <span class="brand-mark">M<span>H</span></span>
+      <span><strong>MY APPS HUB <em>V.1</em></strong><small>All Your Apps. One Place.</small></span>
+    </a>
+    <nav aria-label="Navigasi utama">
+      <a href="#utama">Utama</a>
+      <a href="#pendidikan">Pendidikan</a>
+      <a href="#perniagaan">Perniagaan</a>
+      <a href="#kariah">Pengurusan Kariah</a>
+    </nav>
+    <button id="installBtn" class="btn btn-outline install-btn" hidden>Pasang PWA</button>
+  </header>
+
+  <main>
+    <section class="hero" id="utama">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> SATU PORTAL • PELBAGAI KEGUNAAN</div>
+        <h1>Semua aplikasi anda,<br><span>di satu tempat.</span></h1>
+        <p>Terokai aplikasi pendidikan, perniagaan dan pengurusan komuniti melalui satu hab yang mudah digunakan.</p>
+        <a class="btn btn-primary" href="#katalog">Teroka Aplikasi <span aria-hidden="true">↘</span></a>
+        <div class="hero-note"><span class="check">✓</span> Direka untuk desktop, tablet dan telefon</div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="hub-card"><div class="hub-symbol">✦</div><strong>MY APPS<br>HUB</strong><small>V.1</small></div>
+        <div class="float-card float-edu"><span>▣</span><div><b>Pendidikan</b><small>Belajar & berkembang</small></div></div>
+        <div class="float-card float-biz"><span>▥</span><div><b>Perniagaan</b><small>Urus lebih mudah</small></div></div>
+        <div class="float-card float-com"><span>⌂</span><div><b>Komuniti</b><small>Pengurusan kariah</small></div></div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Ringkasan katalog">
+      <div><strong>12</strong><span>Aplikasi dalam katalog</span></div>
+      <div><strong>08</strong><span>Pendidikan</span></div>
+      <div><strong>03</strong><span>Perniagaan</span></div>
+      <div><strong>01</strong><span>Pengurusan Kariah</span></div>
+    </section>
+
+    <section class="catalog" id="katalog">
+      <div class="section-heading">
+        <div><div class="eyebrow">KATALOG APLIKASI</div><h2>Cari aplikasi anda</h2><p>Pilih kategori atau taip nama aplikasi.</p></div>
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Cari aplikasi..." aria-label="Cari aplikasi"></label>
+      </div>
+      <div class="filters" role="group" aria-label="Penapis kategori">
+        <button class="filter active" data-filter="Semua">Semua <span>12</span></button>
+        <button class="filter" data-filter="Pendidikan">Pendidikan <span>8</span></button>
+        <button class="filter" data-filter="Perniagaan">Perniagaan <span>3</span></button>
+        <button class="filter" data-filter="Pengurusan Kariah">Pengurusan Kariah <span>1</span></button>
+      </div>
+
+      <div class="category-title" id="pendidikan"><div class="category-icon edu-icon">✦</div><div><h3>Pendidikan</h3><p>Aplikasi pembelajaran dan perkembangan kanak-kanak</p></div><span class="count">08 APLIKASI</span></div>
+      <div class="app-grid" id="educationGrid"></div>
+
+      <div class="category-title category-gap" id="perniagaan"><div class="category-icon biz-icon">▥</div><div><h3>Perniagaan</h3><p>Alat untuk membantu urusan perniagaan</p></div><span class="count">03 APLIKASI</span></div>
+      <div class="app-grid" id="businessGrid"></div>
+
+      <div class="category-title category-gap" id="kariah"><div class="category-icon community-icon">⌂</div><div><h3>Pengurusan Kariah</h3><p>Pengurusan ahli dan rekod komuniti</p></div><span class="count">01 APLIKASI</span></div>
+      <div class="app-grid" id="kariahGrid"></div>
+      <div id="emptyState" class="empty-state" hidden>Tiada aplikasi yang sepadan dengan carian anda.</div>
+    </section>
+
+    <section class="contact-strip">
+      <div class="contact-icon">✉</div><div><h3>Perlukan fail pemasangan?</h3><p>Hantar permohonan melalui e-mel untuk aplikasi yang tersedia melalui permintaan.</p></div>
+      <a class="btn btn-outline" href="mailto:duroodv1@gmail.com?subject=Pertanyaan%20MY%20APPS%20HUB%20V.1">Hubungi Kami ↗</a>
+    </section>
+  </main>
+
+  <footer><a class="footer-brand" href="#">MY APPS HUB <em>V.1</em></a><span>All Your Apps. One Place.</span><a href="mailto:duroodv1@gmail.com">duroodv1@gmail.com</a><small>© <span id="year"></span> MY APPS HUB V.1. Hak cipta terpelihara.</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>

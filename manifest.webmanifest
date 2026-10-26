@@ -1,0 +1,15 @@
+{
+  "id": "./",
+  "name": "MY APPS HUB V.1",
+  "short_name": "MY APPS HUB",
+  "description": "All Your Apps. One Place.",
+  "lang": "ms-MY",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#061225",
+  "theme_color": "#071426",
+  "icons": [
+    {"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}
